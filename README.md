@@ -2,7 +2,7 @@
 1. **Clone the repository**
 
 
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/sanjana0503/Django_Sneakers_Website.git
 
 3. **Set up Virtual Environment**
 
