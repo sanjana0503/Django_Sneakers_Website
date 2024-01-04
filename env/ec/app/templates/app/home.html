@@ -1,0 +1,116 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Home {% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- <img src="{% static 'app/images/banner/bg4.png' %}" class="d-block w-100" height="690" width="900"  alt="banner image">
+    </div>
+    <div class="carousel-item"> -->
+      <img src="{% static 'app/images/banner/bg1.png' %}" class="d-block w-100" height="690"  alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/images/banner/bg2.png' %}" class="d-block w-100" height="690"  alt="banner image">
+    </div>
+    <div class="carousel-item">
+        <img src="{% static 'app/images/banner/bg1.png' %}" class="d-block w-100" height="690" alt="banner image">
+      </div>
+    
+  </div>
+</div>
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+  <div class="row bg-dark text-center p-5 text-white border-bottom shadow">
+    <h1>Products</h1>
+    <small class="fs-5">Shop confidently with Sneakz. Our collection boasts genuine, verified sneakers crafted with the utmost quality and precision. Each pair undergoes rigorous authentication processes to ensure authenticity, providing you with peace of mind while making your purchase. Elevate your style with our range of meticulously curated sneakers, designed to deliver both fashion and durability. Embrace the assurance of quality and authenticity as you step into the world of Sneakz.</small>
+  </div>
+</div>
+<br><br>
+{% endblock information %}
+
+{% block main-content %}
+  <div class="container">
+    <h2 class="text-center">Trending Products</h2>
+    <br><br>
+    <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+    <div class="shoes sneakz smbg">
+      <a href="{% url 'category' 'US' %}">
+        <div class="shoescont text-center">
+          <img src="{% static 'app/images/product/us2.png'  %}" width="400" height=" 400" class="img-responsive center-block" alt="w1">
+          <p class="price text-danger" style="font-size: 16px;"><b>₹500.00</b></p>
+        </div>
+        </a>
+    </div>
+    </div>
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+    <div class="shoes sneakz smbg1">
+      <a href="{% url 'category' 'M' %}">
+        <div class="shoescont text-center">
+          <img src="{% static 'app/images/product/m5.png'  %}"  width="400" height=" 400" class="img-responsive center-block" alt="m3">
+          <p class="price text-danger" style="font-size: 16px;"><b>₹500.00</b></p>
+        </div>
+      </a>
+      </div>
+    </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+    style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">  
+    <div class="shoes sneakz forcss">
+      <a href="{% url 'category' 'W' %}">
+        <div class="shoescont text-center">
+          <img src="{% static 'app/images/product/w5.png'  %}" width="400" height=" 400" class="img-responsive center-block" alt="us4">
+         <p class="price text-danger" style="font-size: 16px;"><b>₹500.00</b></p>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <br><br><br><br><br>
+    <div style="margin-bottom: 25px;"></div>
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="shoes sneakz smbg">
+        <a href="{% url 'category' 'M' %}">
+          <div class="shoescont text-center">
+            <img src="{% static 'app/images/product/m3.png'  %}" width="400" height=" 400" class="img-responsive center-block" alt="w1">
+            <p class="price text-danger" style="font-size: 16px;"><b>₹500.00</b></p>
+          </div>
+          </a>
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">
+      <div class="shoes sneakz smbg1">
+        <a href="{% url 'category' 'US' %}">
+          <div class="shoescont text-center">
+            <img src="{% static 'app/images/product/us1.png'  %}"  width="400" height=" 400" class="img-responsive center-block" alt="m3">
+            <p class="price text-danger" style="font-size: 16px;"><b>₹500.00</b></p>
+          </div>
+        </a>
+        </div>
+      </div>
+  
+          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
+      style="animation-duration: 1s; animation-delay: 0.6s; animation-name:none;">  
+      <div class="shoes sneakz forcss">
+        <a href="{% url 'category' 'W' %}">
+          <div class="shoescont text-center">
+            <img src="{% static 'app/images/product/w3.png'  %}" width="400" height=" 400" class="img-responsive center-block" alt="us4">
+            <p class="price text-danger" style="font-size: 16px;"><b>₹500.00</b></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+{% endblock main-content %}
